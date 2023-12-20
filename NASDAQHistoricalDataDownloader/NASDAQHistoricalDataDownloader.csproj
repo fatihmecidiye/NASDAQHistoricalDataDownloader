@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="HistoricalData\**" />
+    <EmbeddedResource Remove="HistoricalData\**" />
+    <None Remove="HistoricalData\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="nasdaq_screener_1695734364296.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.53" />
+    <PackageReference Include="Selenium.Support" Version="4.13.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.13.1" />
+  </ItemGroup>
+
+</Project>

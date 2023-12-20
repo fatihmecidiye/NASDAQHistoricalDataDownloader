@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+NASDAQHistoricalDataDownloader/HistoricalData/
+NASDAQHistoricalDataDownloader/nasdaq_screener_1695734364296.csv
